@@ -1,0 +1,15 @@
+Difference between HTTP1.1 vs HTTP2
+
+HTTP1.1;
+
+HTTP/1.1 was the third version of HTTP and the standard protocol for over 15 years. It introduced persistent connections for improved performance and laid the foundation for standard requests, such as GET, HEAD, PUT, and POST.
+As websites became more resource-intensive, however, HTTP/1.1’s limitations began to show. Specifically, its use of one outstanding request per TCP connection created significant overhead, slowing down page load times.
+
+HTTP2;
+
+This specification describes an optimized expression of the semantics of the Hypertext Transfer Protocol (HTTP), referred to as HTTP version 2 (HTTP/2). HTTP/2 enables a more efficient use of network resources and a reduced perception of latency by introducing header field compression and allowing multiple concurrent exchanges on the same connection. It also introduces unsolicited push of representations from servers to clients.
+
+HTTP1.1 vs HTTP2
+
+The breaking point in HTTP/1.1 was reached well before the 2015 introduction of HTTP/2. In fact, Google was working on its own replacement for HTTP/1.1 since the early 2010s, called SPDY (pronounced “speedy”). This protocol used the existing infrastructure built for HTTP/1.1, but modified how the requests worked over the infrastructure. SPDY used multiplexing to download multiple resources efficiently over a single connection and could be “back-ported” to existing applications with a translation layer.
+HTTP/2 improved on HTTP/1.1 in a number of ways that allowed for speedier content delivery and improved user experience.
